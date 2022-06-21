@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    borderColor: '#f0f8ff',
+
   }
 });
