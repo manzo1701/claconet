@@ -1,6 +1,6 @@
-Synthesizing 8/10 solutions
 
-=======
+
+
 
 //component login
 var Saludar = React.createClass({
