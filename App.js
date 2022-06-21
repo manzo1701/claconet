@@ -26,7 +26,5 @@ const styles = StyleSheet.create({
   },
   container2: {
     borderColor: '#f0f8ff',
-    color: '#f0ffff',
-  
   }
 });
