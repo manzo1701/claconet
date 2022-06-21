@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     borderColor: '#f0f8ff',
     color: '#f0ffff',
     flex: 1,
-    backgroundColor: '#fff',
-    
+  
   }
 });
