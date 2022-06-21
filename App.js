@@ -1,19 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import UsuarioForm from './src/ui/UsuarioForm';
-import LoginForm from './src/ui/LoginForm';
-import Saludar from './src/ui/saludar';
+import ClasesConsulta from './src/ui/ClasesConsulta';
 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      
-    
-     
-     <LoginForm/>
-    
+    <View style={styles.container}> 
+        
+  <ClasesConsulta/>
     
     </View>
     
@@ -22,10 +17,11 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    fontFamily: 'nonito',
     borderColor: '#f0f8ff',
-    color: '#f0ffff',
+    color: 'FFFFFF',
     flex: 1,
-    backgroundColor: "red",
+    backgroundColor: "blue",
     alignItems: 'center',
     justifyContent: 'center',
   },
