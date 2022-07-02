@@ -11,7 +11,7 @@ export default function ClasesConsulta() {
         </TouchableOpacity>
         
         <Text style={styles.text}>Profesor: </Text>
-        <Text style={stylestext}>Nombre profe </Text>
+        <Text style={styles.text}>Nombre profe </Text>
         <Text style={styles.text}>Horarios: </Text>
         <Text style={styles.text}>Dia-horario </Text>
     
