@@ -2,9 +2,9 @@ import react from 'react'
 import{Alert, Text, View, Button, TextInput, StyleSheet, TouchableOpacity} from "react-native";
 import { ImageBackground } from 'react-native-web';
 
-export default function ClasesConsulta() {
+export default function ClasesConsulta() { //funcion que se encarga de la plantilla de una materia
     return (
-    <View style={styles.contenedor}>
+    <View style={styles.contenedor}> //
 <Text style={styles.header}>Clases de Consulta</Text>
         <TouchableOpacity onPress={() => Alert.alert('texto tocado')}>    
         <Text style={styles.button}>Nombre Jefatura</Text>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
    },
    text:{
     color: '#ffff',
-    fontSize: 20,
+    fontSize: 10,
     alignItems: 'center',
     justifyContent: 'center',
    },
