@@ -1,6 +1,6 @@
 import react from "react";
 import{Text, View, Button, TextInput} from "react-native";
-export default function UsuarioForm(){
+export default function UsuarioForm(){ //
     return(
         <View>
         <TextInput placeholder="Email"/>
