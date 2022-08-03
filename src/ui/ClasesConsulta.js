@@ -9,7 +9,15 @@ export default function ClasesConsulta() { //funcion que se encarga de la planti
     <div className='header'>
     <h1 className='titulo'>Clases de consulta</h1>
     <div className='header_materia'>
-<h2 className='titulo_materia'>nombre_materia</h2>
+<h2 className='titulo_materia'>nombre_jefatura</h2>
+    </div>
+    <div className='segmento_profesor'>
+    <div className='profesor'>profesor:</div>
+    <div className='n_profesor'>nombre profesor</div>
+    </div>
+    <div className='segmento_horario'>
+    <div className='horiarios'>horarios:</div>
+    <div className='d_horario'>dia de horario</div>
     </div>
     </div>
     /*<View style={styles.contenedor}>  
