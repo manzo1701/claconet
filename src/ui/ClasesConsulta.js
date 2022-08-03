@@ -8,6 +8,9 @@ export default function ClasesConsulta() { //funcion que se encarga de la planti
     
     <div className='header'>
     <h1 className='titulo'>Clases de consulta</h1>
+    <div className='header_materia'>
+<h2 className='titulo_materia'>nombre_materia</h2>
+    </div>
     </div>
     /*<View style={styles.contenedor}>  
 <Text style={styles.header}>Clases de Consulta</Text>
