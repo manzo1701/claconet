@@ -6,10 +6,10 @@ import { ImageBackground } from 'react-native-web';
 export default function ClasesConsulta() { //funcion que se encarga de la plantilla de una materia
     return (  //contenido de la plantilla
     
-    <div className='header'>
-    <h1 className='titulo'>Clases de consulta</h1>
+    <div className='body'>
+    
     <div className='header_materia'>
-<h2 className='titulo_materia'>nombre_jefatura</h2>
+    <h2 className='titulo_materia'>nombre_jefatura</h2>
     </div>
     <div className='segmento_profesor'>
     <div className='profesor'>profesor:</div>
