@@ -1,4 +1,5 @@
 import react from 'react'
+import '../../stylesheet/ClasesConsulta.css'
 import{Alert, Text, View, Button, TextInput, StyleSheet} from "react-native";
 import { block } from 'react-native-reanimated';
 import { ImageBackground } from 'react-native-web';
