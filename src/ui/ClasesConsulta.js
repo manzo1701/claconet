@@ -1,5 +1,5 @@
 import react from 'react'
-import{Alert, Text, View, Button, TextInput, StyleSheet, TouchableOpacity} from "react-native";
+import{Alert, Text, View, Button, TextInput, StyleSheet} from "react-native";
 import { block } from 'react-native-reanimated';
 import { ImageBackground } from 'react-native-web';
 
@@ -39,6 +39,7 @@ export default function ClasesConsulta() { //funcion que se encarga de la planti
     </View>*/
     )
 }
+
 
 const styles = StyleSheet.create({ //estilos de la plantilla
    box:{ //estilo que intenta generar bordes en el contenido

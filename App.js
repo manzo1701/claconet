@@ -15,6 +15,8 @@ export default function App() { //funcion encargada de solo mostrar las demas, l
   );
 }
 
+
+
 const styles = StyleSheet.create({
   
   container: {
