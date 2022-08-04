@@ -1,6 +1,14 @@
 .body{
-    width: 1170px;
+
     font-family: nunito;
     color: black;
     background-color: #ffffff;
+    border-radius: 4%;
+    display: inline-block;
+padding: 10px 20px;
+}
+.segmento_profesor{
+    background-color: #ffffff;
+    border-color: black;
+    text-align: left;
 }
