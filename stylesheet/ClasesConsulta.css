@@ -1,5 +1,5 @@
 .body{
-
+width: 280px;
     font-family: nunito;
     color: black;
     background-color: #ffffff;
@@ -9,6 +9,23 @@ padding: 10px 20px;
 }
 .segmento_profesor{
     background-color: #ffffff;
-    border-color: black;
+    border: 4px solid black;
     text-align: left;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.profesor{
+    text-align: center;
+}
+.horiarios{
+    text-align: center;
+}
+.segmento_horario{
+    background-color: #ffffff;
+    text-align: right;
+    border: 4px solid black;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
