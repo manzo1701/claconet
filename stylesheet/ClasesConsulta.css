@@ -5,27 +5,28 @@ width: 280px;
     background-color: #ffffff;
     border-radius: 4%;
     display: inline-block;
-padding: 10px 20px;
+padding: 20px 40px;
 }
 .segmento_profesor{
     background-color: #ffffff;
-    border: 4px solid black;
+    border: 2.5px solid black;
     text-align: left;
     display: inline-block;
     border-radius: 4px;
-    margin-bottom: 20px;
+
 }
 .profesor{
     text-align: center;
 }
 .horiarios{
+    
     text-align: center;
 }
 .segmento_horario{
     background-color: #ffffff;
     text-align: right;
-    border: 4px solid black;
+    border: 2.5px solid black;
     display: inline-block;
     border-radius: 4px;
-    margin-bottom: 20px;
+
 }
