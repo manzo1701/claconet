@@ -11,7 +11,21 @@ export default function App() { //funcion encargada de solo mostrar las demas, l
     <div className='App'>
       <div className='contenedor-principal'>
         <h1 className='titulo'>Clases de consulta</h1>
-  <ClasesConsulta/>
+  <ClasesConsulta
+  jefatura='biologia'
+  profesor='mabel'
+  horario='miercoles, 8:00 a 9:00'
+  />
+  <ClasesConsulta
+  jefatura='proramacion avanzada'
+  profesor='wity'
+  horario='miercoles, 8:30 a 10:00'
+  />
+  <ClasesConsulta
+  jefatura='proramacion web'
+  profesor='juanjo'
+  horario='viernes, 8:30 a 10:00'
+  />
   </div>
   </div>
     </View>

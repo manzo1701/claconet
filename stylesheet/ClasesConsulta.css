@@ -4,8 +4,9 @@ width: 280px;
     color: black;
     background-color: #ffffff;
     border-radius: 4%;
-    display: inline-block;
+    display: block;
 padding: 20px 40px;
+margin-bottom: 20px;
 }
 .segmento_profesor{
     background-color: #ffffff;

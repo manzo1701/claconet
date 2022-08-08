@@ -4,21 +4,21 @@ import{Alert, Text, View, Button, TextInput, StyleSheet} from "react-native";
 import { block } from 'react-native-reanimated';
 import { ImageBackground } from 'react-native-web';
 
-export default function ClasesConsulta() { //funcion que se encarga de la plantilla de una materia
+export default function ClasesConsulta(props) { //funcion que se encarga de la plantilla de una materia
     return (  //contenido de la plantilla
     
     <div className='body'>
     
     <div className='header_materia'>
-    <h2 className='titulo_materia'>nombre_jefatura</h2>
+    <h2 className='titulo_materia'>{props.jefatura}</h2>
     </div>
     <div className='segmento_profesor'>
     <div className='profesor'>profesor:</div>
-    <div className='n_profesor'>nombre profesor</div>
+    <div className='n_profesor'>{props.profesor}</div>
     </div>
     <div className='segmento_horario'>
     <div className='horiarios'>horarios:</div>
-    <div className='d_horario'>dia de horario</div>
+    <div className='d_horario'>{props.horario}</div>
     </div>
     </div>
     /*<View style={styles.contenedor}>  
