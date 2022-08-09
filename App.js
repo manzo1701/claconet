@@ -33,18 +33,3 @@ export default function App() { //funcion encargada de solo mostrar las demas, l
   );
 }
 
-/*
-
-const styles = StyleSheet.create({
-  
-  container: {
-    borderColor: '#f0f8ff',
-    color: 'FFFFFF',
-    flex: 1,
-    backgroundColor: "blue",
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-});
-*/
