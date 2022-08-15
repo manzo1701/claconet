@@ -1,5 +1,5 @@
 import react from "react";
-import {TextInput, Button, Text, View} from "react-native"
+import {TextInput, Button, View} from "react-native"
 
 
 export default function LoginForm (){
