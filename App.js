@@ -1,9 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import UsuarioForm from './src/ui/Components/UsuarioForm'
-import Saludar from './src/ui/saludar';
-import './src/ui/Components/LoginForm'
+import './src/ui/Components/UsuarioForm'
+
 
 
 export default function App() {
@@ -20,11 +19,7 @@ export default function App() {
   );
 }
 
-const App = () => (
-  <View>
-    <Text> Iniciando Login</Text>
-  </View>
-)
+
 
 const styles = StyleSheet.create({
   container: {
