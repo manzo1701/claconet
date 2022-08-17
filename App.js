@@ -4,8 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import UsuarioForm from './src/ui/UsuarioForm';
 import LoginForm from './src/ui/LoginForm';
 import Saludar from './src/ui/saludar';
+import 'react-native-gesture-handler';
 import ProfesorForm from './src/ui/ProfesorForm';
-
 
 export default function App() {
   return (
@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
     borderColor: '#f0f8ff',
     color: '#f0ffff',
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'top',
   }
 });
