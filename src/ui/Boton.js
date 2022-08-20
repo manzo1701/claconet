@@ -3,24 +3,25 @@ import{Alert, Text, View, Button, TextInput, StyleSheet, Touchable} from "react-
 import { block } from 'react-native-reanimated';
 import { ImageBackground } from 'react-native-web';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import Boton from './Boton';
 
 
-export default function ClasesConsulta({ navigation }) { //funcion que se encarga de la plantilla de una materia
+const Boton = (props) => { 
     const {onPress,text} = props
-    return (  //contenido de la plantilla
-    
+    return (  
+    <View >
         <View>
-        <Boton 
-            text = "ir a biologia"
-            onPress = { () => {
-                navigation.navigate('materia')
-            }}
-        />
+        <TouchableOpacity
+            onPress ={onPress}
+        >                  
+            <Text>
+                {text}
+            </Text>
+            </TouchableOpacity>
         </View>
-    
+    </View>
     )
 }
+export default Boton
 
 
 

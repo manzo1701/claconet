@@ -1,22 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import './App.css';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import ClasesConsulta from './src/ui/ClasesConsulta'; //importacion del componente Clases de consulta
+import react from 'react'
+import {Container} from './stylesheet/styles'
+import{Alert, Text, View, Button, TextInput, StyleSheet, Touchable} from "react-native";
+import { block } from 'react-native-reanimated';
+import { ImageBackground } from 'react-native-web';
+import MainStack from './navigation/MainStack';
+import PaginaMateria from './src/ui/PaginaMateria';
 
 
-
-export default function App() { //funcion encargada de solo mostrar las demas, la cual asta ahora es clasesconsulta
-  return (
-    <View> 
-     <ClasesConsulta
-    text='nombre_materia'
-    onPress = { () => {
-      alert('ir a pagina')
-    }}
+export default function App() { //funcion que se encarga de la plantilla de una materia
+    
+    return (  //contenido de la plantilla
+    <View>
+    <PaginaMateria
+        materia = "Biologia"
     />
+
     </View>
     
-  );
+    
+    
+    
+    /*<View>
+    
+        <MainStack/>
+        
+    </View>*/
+    )
 }
-
