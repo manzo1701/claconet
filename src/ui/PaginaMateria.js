@@ -24,8 +24,7 @@ export default function PaginaMateria(props) { //funcion que se encarga de la pl
             <TextInput placeholder="Campo a rellenar (Obligatorio) especificando que materiales se lllevan para poder estudiar"/><br/>
    
           
-            <Button title="Aceptar" onPress={() => console.log("Enviar")}/><br/>
-            <Button style="" title="Cancelar" onPress={() => console.log("Cancelar")}/>
+            <Button title="Aceptar" onPress={() => console.log("Enviar")}/>
             
         </View>
     
