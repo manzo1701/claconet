@@ -1,9 +1,11 @@
-
 import react from "react";
 import {TextInput, Button, Text, View, TouchableOpacity, Alert} from "react-native"
 import App from './scene/App';
 import React, { Component } from 'react';
 
+
+
+import {TextInput, Button, View} from "react-native"
 
 
 

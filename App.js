@@ -6,20 +6,25 @@ import LoginForm from './UI/components/LoginForm';
 import Saludar from './UI/components/Saludar';
 import 'react-native-gesture-handler';
 import ProfesorForm from './UI/components/ProfesorForm';
+import './src/ui/Components/UsuarioForm'
+import Cartel from './src/ui/cartelMaterias';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      
-    
-      <ProfesorForm/><br/>
-      <LoginForm/>
+
+     
+     <Cartel/>
+
     
     
     </View>
     
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
