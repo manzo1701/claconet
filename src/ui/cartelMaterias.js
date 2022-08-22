@@ -1,13 +1,24 @@
 import React from "react";
 import{Text, View, Button, TextInput} from "react-native";
-
+import { StyleSheet } from "react-native-web";
 
 export default function Cartel(){
 
     return(
         <View>
-        <Text>Hola buenas tardes</Text>
+        <Text style={estilo.contenedor}>Hola buenas tardes</Text>
         </View>
     )
 
 }
+
+const estilo = StyleSheet.create({
+    contenedor:{
+        padding: 10,
+        margin: 10,
+        backgroundColor: 'white',
+        borderRadius: 10,
+    }
+
+
+})
