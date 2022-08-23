@@ -16,8 +16,22 @@ export default class LoginScreen extends Component{
     }
 
     render(){
-        return(
-            <View style={ImageBackgroundStyle.image}//Uso del estilo de la carpeta styles
+        return( //Uso el estilo de la carpeta styles
+            <View style={ImageBackgroundStyle.image}> 
+                <StatusBar translucent backgroundColor='rgba(0,0,0,0.2)'/>
+                <Animatable.Image //Uso el Componente y sus propiedades
+                    animation="pulse"//Animancion pulsante
+                    easing="ease-in-out"//Animacion hacia afuera
+                    iterationCount="infinite"//Animacion infinita
+                    style={{
+                        width:200,
+                        height:200,
+                        margin:100,
+                    }}
+                    source={require('@recursos/consultas.png')}
+                
+                />
+            </View> 
         )
     } 
 }
