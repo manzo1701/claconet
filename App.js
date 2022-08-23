@@ -1,14 +1,29 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Cartel from './UI/components/cartelMaterias';
-
-
 export default function App() {
 
     return (
+      
+      
+
       <View style={styles.container}>
-        <Cartel/>
+        <Cartel
+          materia = "Matematica"
+          profesor = "Exequiel Wiedermann"
+          horario1 = "18:30"
+          horario2 = "20:30"
+
+          
+        />
+        <Cartel
+          materia = "Física"
+          profesor = "Alejandro Zeballos"
+          horario1 = "15:00"
+          horario2 = "16:30"
+        />
       </View>
+      
     
     
     )
@@ -19,9 +34,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
 
-    backgroundColor: 'grey',
+    backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
+    flex: 1,
   },
   container2: {
     borderColor: '#f0f8ff',
