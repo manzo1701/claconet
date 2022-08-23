@@ -1,8 +1,8 @@
-import react from "react";
-import {TextInput, Button, View} from "react-native"
+//import react from "react";
+//import {TextInput, Button, View} from "react-native"
 
 
-export default function LoginForm (){
+/*export default function LoginForm (){
     return(
  
         <View>
