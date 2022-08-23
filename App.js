@@ -1,27 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import UsuarioForm from './UI/components/UsuarioForm';
-import LoginForm from './UI/components/LoginForm';
-import Saludar from './UI/components/Saludar';
-import 'react-native-gesture-handler';
-import ProfesorForm from './UI/components/ProfesorForm';
-import './src/ui/Components/UsuarioForm'
-import Cartel from './src/ui/cartelMaterias';
+import Cartel from './UI/components/cartelMaterias';
 
 
 export default function App() {
-  return (
-    <View style={styles.container}>
 
-     
-     <Cartel/>
-
+    return (
+      <View style={styles.container}>
+        <Cartel/>
+      </View>
     
     
-    </View>
-    
-  );
+    )
 }
 
 
@@ -29,10 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
 
-    borderColor: '#f0f8ff',
-    color: 'black',
-    flex: 1,
-    backgroundColor: "grey",
+    backgroundColor: 'grey',
     alignItems: 'center',
     justifyContent: 'center',
   },
