@@ -6,7 +6,7 @@ export default function Cartel(){
 
     return(
         <View>
-        <Text style={estilo.contenedor}>Hola buenas tardes, como anda?</Text>
+        <Text style={estilo.contenedor}>Hola buenas tardes como anda?</Text>
         </View>
     )
 
