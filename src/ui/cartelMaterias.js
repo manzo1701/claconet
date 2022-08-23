@@ -22,3 +22,4 @@ const estilo = StyleSheet.create({
 
 
 })
+
