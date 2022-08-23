@@ -19,7 +19,7 @@ const estilo = StyleSheet.create({
     contenedor:{
         padding: 10,
         margin: 10,
-        width: 500,
+        width: 400,
         backgroundColor: 'grey',
         borderRadius: 10,
         borderColor: 'black',
