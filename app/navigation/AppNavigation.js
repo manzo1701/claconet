@@ -1,6 +1,7 @@
 import { createAppContainer } from "react-navigation"; /*Importe dos funciones*/ 
 import { createStackNavigator } from "react-navigation-stack";
-
+import SplashScreen from '@screens/SplashScreen' //Importar las pantallas
+import LoginScreen from '@screens/LoginScreen'
 const AppNavigation = createStackNavigator({
     
     Splash: {
