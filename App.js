@@ -11,7 +11,7 @@ export default function App() {
       
     
      
-     <LoginForm/>
+     <UsuarioForm/>
     
     
     </View>
@@ -19,22 +19,4 @@ export default function App() {
   );
 }
 
-
-
-const styles = StyleSheet.create({
-  container: {
-    borderColor: '#f0f8ff',
-    color: '#f0ffff',
-    flex: 1,
-    backgroundColor: "red",
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  container2: {
-    borderColor: '#f0f8ff',
-    color: '#f0ffff',
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'top',
-  }
-});
+//Hola mundo
