@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import Colors from "./Colors";
 
-const imageBackfroundStyle = StyleSheet.create({
+const imageBackgroundStyle = StyleSheet.create({
     image: {
         flex:1,
         flexDirection:'column',
@@ -11,4 +11,4 @@ const imageBackfroundStyle = StyleSheet.create({
     }
 })
 
-export {imageBackfroundStyle}
+export {imageBackgroundStyle}
