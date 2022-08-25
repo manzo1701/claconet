@@ -1,31 +1,31 @@
 import React from 'react'
 import {StyleSheet, TouchableOpacity, Image} from 'react-native'
 import {Icon, Input } from 'react-native-elements'//componente react elements
-import color from '@styles/colors'//Uso los colores
+import Colors from '@styles/Colors'//Uso los colores
 
 export default function MyTextInput(props){//Estoy recibiendo atraves de props, componente tipo funcion
 
     return (
       <Input
         style={{alignItems: 'center'}}
-        containerStyle={{marginBottom:20,borderBottomColor: color.LIGHTPRIMARYCOLOR, borderBottomWidth: 1}}
+        containerStyle={{marginBottom:20,borderBottomColor: Colors.LIGHTPRIMARYCOLOR, borderBottomWidth: 1}}
         inputStyle={{ fontSize:18,paddingVertical: 10,
             paddingHorizontal:8, marginTop:12,
-            color: color.PRIMARYCOLOR,
+            color: Colors.PRIMARYCOLOR,
             fontFamily:"nunito.semibold",}}
-        placeholderTextColor={color.LIGHTPRIMARYCOLOR}
+        placeholderTextColor={Colors.LIGHTPRIMARYCOLOR}
         placeholder={props.placeholder}
         leftIconContainerStyle={{ marginLeft:0 }}
-        leftIcon={<Icon size={24} color={color.PRIMARYCOLOR} 
+        leftIcon={<Icon size={24} color={Colors.PRIMARYCOLOR} 
         type={'font-awesome'} name={props.image}/>}
         rightIcon={props.bolGone? //opcion de ojo de contraseña
         <TouchableOpacity activeOpacity = { 0.8 } style={styles.btnVisibility} onPress = {props.onPress}>
-        <Image style={ styles.btnImage} tintColor={color.PRIMARYCOLOR} 
-        source = { (props.secureTextEntry) ? require('@recursos/images/ic_show_password.png') : require('@recursos/images/ic_hide_password.png')}/>
+        <Image style={ styles.btnImage} tintColor={Colors.PRIMARYCOLOR} 
+        source = { (props.secureTextEntry) ? require('@recursos/eye-icon.png') : require('@recursos/icon-password.jpg')}/>
         </TouchableOpacity>:
-        <Icon size={24} color={color.PRIMARYCOLOR}
+        <Icon size={24} color={Colors.PRIMARYCOLOR}
         type={'font-awesome'} name={props.imageRight}/>}
-        errorStyle={{ color: color.RED }}
+        errorStyle={{ color: Colors.RED }}
         errorMessage={(props.bolError)?props.strError:''}
         editable={props.editable}
         secureTextEntry={props.secureTextEntry}
