@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
-import { Text, View, TouchableOpacity, StatusBar, Image } from 'react-native'
+import React, {Component, useState} from 'react'
+import { Text, 
+    View, TouchableOpacity, StatusBar, Image } from 'react-native'
 import { loginStyles } from '@styles/General'
 import MyTextInput from '@components/MyTextInput'
 import Colors from '@styles/Colors'
@@ -7,7 +8,7 @@ import Colors from '@styles/Colors'
 
 export default function LoginScreen(){
 
-     const [hidePassword, setHidePassword] = useState(false)
+    const [hidePassword, setHidePassword] = useState(false)
 
         return(
             <View style={[loginStyles.container]}>
@@ -20,7 +21,7 @@ export default function LoginScreen(){
                 <MyTextInput keyboardType='email-address' placeholder='E-mail' image='user'/>
                 <MyTextInput keyboardType={null} placeholder='contraseña' image='look'
                 bolGone={true} secureTextEntry={hidePassword}
-                onPress={()=> setHidePassword(!hidePassword)}/>
+                onPress={() => setHidePassword(!hidePassword)}/>
                 <View style={loginStyles.btnMain}>
                     <TouchableOpacity>
                         <Text style={loginStyles.btntxt}>Iniciar Sesión</Text>
