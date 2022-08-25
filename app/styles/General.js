@@ -1,7 +1,8 @@
-import { StyleSheet } from "react-native";
-import Colors from "./colors";
+import { StyleSheet } from "react-native"
+import Colors from "./Colors"
 
-const imageBackgroundStyle = StyleSheet.create({
+//Estilo para SplashScreen
+const splashStyles = StyleSheet.create({
     image: {
         flex:1,
         flexDirection:'column',
@@ -9,6 +10,20 @@ const imageBackgroundStyle = StyleSheet.create({
         alignItems:'center',
         backgroundColor:Colors.WHITE
     }
+})
+
+
+//Estilo para LoginScreen
+const loginStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center',
+    },
+
+    logo: {
+        paddingTop: 50,
+        alignItems: 'center',
+    },
 })
 
 export {imageBackgroundStyle}
