@@ -1,6 +1,7 @@
 import React from "react";
 import{Text, View, Button, TextInput} from "react-native";
 import { StyleSheet } from "react-native-web";
+import alumnos from "./alumnos";
 
 export default function Cartel(props){
     const { materia, horario1, horario2 } = props
@@ -9,7 +10,6 @@ export default function Cartel(props){
         
         <View>
         <Text style={estilo.contenedor}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
-        
         </View>
         
     )

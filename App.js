@@ -12,7 +12,7 @@ export default function App(props) {
 
       <View style={styles.container}>
 
-        <Bienvenida style={styles.container} profesor = "Wiedermann"/>
+        <Bienvenida profesor = "Wiedermann"/>
 
         <Cartel
           materia = "Matematica"
@@ -27,6 +27,13 @@ export default function App(props) {
           profesor = "Wiedermann"
           horario1 = "15:00"
           horario2 = "16:30"
+        />
+
+        <Cartel
+          materia = "Programación Web Dinámica"
+          horario1 = "14:20"
+          horario2 = "15:50"
+        
         />
       </View>
       
