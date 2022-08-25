@@ -7,7 +7,7 @@ import Colors from '@styles/Colors'
 
 export default function LoginScreen(){
 
-    const [hidePassword, setHidePassword] = useState(false)
+     const [hidePassword, setHidePassword] = useState(false)
 
         return(
             <View style={[loginStyles.container]}>
