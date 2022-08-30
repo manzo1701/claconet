@@ -1,19 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from 'react-native';
 
-class Bienvenida extends React.Component {
+export function Bienvenida(props){
 
-    render(){
-        return (
-          <View>
-            <Text>Bienvenido {this.props.profesor}</Text>
-            <Button
-                title="Ir a mis clases"
-                onPress={() =>
-                    this.props.navigation.navigate('HomeProfe')
-                }
-            />
-          </View>
-    );
-    }
+
+    return(
+    
+    <h1>Bienvenido { props.profesor }</h1>
+    )
 }
