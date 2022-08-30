@@ -1,47 +1,31 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Bienvenida from './UI/components/bienvenida';
 import Cartel from './UI/components/cartelMaterias';
-import { Bienvenida } from './UI/components/bienvenida';
-export default function App(props) {
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigation } from '@react-navigation/stack';
 
+const Stack = createStackNavigation();
+class App extends React.Component {
 
-
+  render(){
     return (
-      
-      
-
-      <View style={styles.container}>
-
-        <Bienvenida profesor = "Wiedermann"/>
-
-        <Cartel
-          materia = "Matematica"
-          horario1 = "18:30"
-          profesor = "Wiedermann"
-          horario2 = "20:30"
-
-          
-        />
-        <Cartel
-          materia = "Física"
-          profesor = "Wiedermann"
-          horario1 = "15:00"
-          horario2 = "16:30"
-        />
-
-        <Cartel
-          materia = "Programación Web Dinámica"
-          horario1 = "14:20"
-          horario2 = "15:50"
-        
-        />
-      </View>
-      
-    
-    
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="HomeProfe"
+            component={Cartel}
+          />
+          <Stack.Screen
+            name="Bienvenida"
+            component={Bienvenida}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     )
-}
+  }
 
+}
 
 
 const styles = StyleSheet.create({
@@ -61,3 +45,6 @@ const styles = StyleSheet.create({
 
 
 });
+
+export default App;
+

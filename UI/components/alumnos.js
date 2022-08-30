@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 import alumno from './alumno';
 
 const Alumnos = () => {
@@ -23,13 +23,7 @@ const Alumnos = () => {
 
 
     return (
-
-    <div className='row'>
-        {alumnos.map(alumnos = > {
-            return()
-        })}
-    </div>
   )
 }
 
-export default Alumnos
+export default Alumnos*/
