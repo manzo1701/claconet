@@ -1,3 +1,5 @@
+//COMPONENTE EN PRUEBA, AUN NO SE IMPLEMENTA
+
 import React from "react";
 import{Text, View, Button, TextInput} from "react-native";
 
