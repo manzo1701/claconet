@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import Cartel from './UI/components/cartelMaterias';
-import { Bienvenida } from './UI/components/bienvenida';
-import 'react-native-gesture-handler';
+import Cartel from './UI/components/cartelMaterias';    //Se importa el componente Cartel
+import { Bienvenida } from './UI/components/bienvenida';    //Se importa el componente Bienvenida
+import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
 
 
 
