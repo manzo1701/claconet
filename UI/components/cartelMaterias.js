@@ -1,7 +1,6 @@
 import React from "react";
 import{Text, View, Button, TextInput} from "react-native";
 import { StyleSheet } from "react-native-web";
-import alumnos from "./alumnos";
 
 export default function Cartel(props){
     const { materia, horario1, horario2 } = props

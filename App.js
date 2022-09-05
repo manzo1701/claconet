@@ -2,46 +2,47 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Cartel from './UI/components/cartelMaterias';
 import { Bienvenida } from './UI/components/bienvenida';
-export default function App(props) {
+import 'react-native-gesture-handler';
+import MainStack from './navigation/MainStack';
+
+
+
+
+export default function App() {
 
 
 
     return (
       
-      
+        <View style={styles.container}>    
 
-      <View style={styles.container}>
+          <Bienvenida profesor = "Wiedermann"/>
+          <Cartel
+            materia = "Matematica"
+            horario1 = "18:30"
+            profesor = "Wiedermann"
+            horario2 = "20:30"
 
-      <Button type="solid" title='Ir a Bienvenida'>
-          
-        </Button>      
-
-        <Bienvenida profesor = "Wiedermann"/>
-
-        <Cartel
-          materia = "Matematica"
-          horario1 = "18:30"
-          profesor = "Wiedermann"
-          horario2 = "20:30"
-
-          
-        />
-        <Cartel
-          materia = "Física"
-          profesor = "Wiedermann"
-          horario1 = "15:00"
-          horario2 = "16:30"
-        />
-
-        <Cartel
-          materia = "Programación Web Dinámica"
-          horario1 = "14:20"
-          horario2 = "15:50"
-        
-        />
-      </View>
-      
     
+          />
+          <Cartel
+            materia = "Física"
+            profesor = "Wiedermann"
+            horario1 = "15:00"
+            horario2 = "16:30"
+          />
+
+          <Cartel
+            materia = "Programación Web Dinámica"
+            horario1 = "14:20"
+            horario2 = "15:50"
+  
+          />
+
+          <MainStack/>
+        </View>
+        
+
     
     )
 }
