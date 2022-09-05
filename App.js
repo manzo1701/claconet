@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import Cartel from './UI/components/cartelMaterias';
 import { Bienvenida } from './UI/components/bienvenida';
 import 'react-native-gesture-handler';
-import MainStack from './navigation/MainStack';
 
 
 
@@ -39,8 +38,7 @@ export default function App() {
   
           />
 
-          <MainStack/>
-        </View>
+        </View>     //Se gaurda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
         
 
     
@@ -49,7 +47,7 @@ export default function App() {
 
 
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({      //style para el fondo de la app
   container: {
 
     backgroundColor: 'blue',
