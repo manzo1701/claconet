@@ -1,3 +1,5 @@
+//COMPONENTE EN PRUEBA, AUN NO SE IMPLEMENTA
+
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';    //Se importa las caracteristicas de React Navigation
 import Mensaje from '../UI/components/Mensajes';    //Se importa las caracteristicas de React Navigation
