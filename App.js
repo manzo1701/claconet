@@ -18,22 +18,20 @@ export default function App() {
 
           <Bienvenida profesor = "Wiedermann"/>
           <Cartel
-            materia = "Matematica"
+            materia = "Programación Web Dinámica"
             horario1 = "18:30"
-            profesor = "Wiedermann"
             horario2 = "20:30"
 
     
           />
           <Cartel
-            materia = "Física"
-            profesor = "Wiedermann"
+            materia = "Programación Web Estática"
             horario1 = "15:00"
             horario2 = "16:30"
           />
 
           <Cartel
-            materia = "Programación Web Dinámica"
+            materia = "Sistemas Operativos I"
             horario1 = "14:20"
             horario2 = "15:50"
   
