@@ -38,7 +38,7 @@ export default function App() {
   
           />
 
-        </View>     //Se gaurda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
+        </View>     //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
         
 
     
