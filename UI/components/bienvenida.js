@@ -7,7 +7,7 @@ export function Bienvenida(props){
     return(
     
     <View style={styles.estilo}>    
-        <h1>Bienvenido { props.profesor }</h1>
+        <h1>Bienvenido, { props.profesor }</h1>
     </View>
     )
 }

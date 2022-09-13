@@ -36,6 +36,16 @@ export default function App() {
             horario2 = "15:50"
   
           />
+          <Cartel
+            materia = "Seguridad Informática"
+            horario1 = "19:20"
+            horario2 = "20:50"
+          />
+          <Cartel
+            materia = "Testing"
+            horario1 = "16:50"
+            horario2 = "17:50"
+          />
 
         </View>     //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
         
