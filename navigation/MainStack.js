@@ -1,24 +1,23 @@
 //COMPONENTE EN PRUEBA, AUN NO SE IMPLEMENTA
-
-import React from 'react'
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';    //Se importa las caracteristicas de React Navigation
-import Mensaje from '../UI/components/Mensajes';    //Se importa las caracteristicas de React Navigation
-import { createStackNavigator } from 'react-navigation-stack';    //Se importa las caracteristicas de React Navigation
+import { createNativeStackNavigator } from 'react-navigation-stack';
+import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
+import Home from '../UI/components/cartelMaterias';
 
-const Stack = createStackNavigator();       /*Se guarda en una variable constante la función createStackNavigator que devuelve 2 propiedades
-                                            Screen y Navigator.*/
+const Stack = createNativeStackNavigator();
 
 const MainStack = () => {
     return(
 
            <NavigationContainer>            
-            <Stack.Navigator>
-                <Stack.Screen
-                    name = "home"
-                    component = { Mensaje }
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
+                <Stack.Navigator>
+                    <Stack.Screen
+                        name = "cartelMaterias"
+                        component = { Home }
+                    />
+                </Stack.Navigator>
+            </NavigationContainer>
     )
 }
 
