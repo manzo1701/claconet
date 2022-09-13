@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import Cartel from './UI/components/cartelMaterias';    //Se importa el componente Cartel
 import { Bienvenida } from './UI/components/bienvenida';    //Se importa el componente Bienvenida
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
@@ -15,7 +15,7 @@ export default function App() {
       
         
         <View style={styles.container}>    
-
+          <TouchableOpacity style={styles.container2}>Log Out</TouchableOpacity>
           <Bienvenida profesor = "Wiedermann"/>
           <Cartel
             materia = "Programación Web Dinámica"
@@ -55,9 +55,15 @@ const styles = StyleSheet.create({      //style para el fondo de la app
     flex: 1,
   },
   container2: {
-    borderColor: '#f0f8ff',
-    color: '#f0ffff',
-    flex: 1,
-    alignItems: 'top',
+    backgroundColor: 'grey',
+    color: 'black',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 100,
+    height: 30,
+    padding: 10,
+    margin: 10,
+    borderRadius: 10,
+    fontFamily: 'Arial',
   }
 });
