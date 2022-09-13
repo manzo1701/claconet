@@ -8,3 +8,4 @@ export function Bienvenida(props){
     <h1>Bienvenido { props.profesor }</h1>
     )
 }
+
