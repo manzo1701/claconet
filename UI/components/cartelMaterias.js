@@ -19,12 +19,12 @@ export default function Cartel(props){
 
 const estilo = StyleSheet.create({      //style para armar el cartel de materia
     contenedor:{
-        padding: 20,
+        padding: 15,
         margin: 20,
         width: 400,
         borderRadius: 20,
         borderColor: 'black',
-        borderWidth: 5,
+        borderWidth: 3,
         alignItems: 'center',
         justifyContent: 'center',
         fontSize: 24,
