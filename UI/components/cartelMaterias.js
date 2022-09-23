@@ -1,5 +1,5 @@
 import React from "react";
-import{Text, View, Button, StyleSheet, TouchableOpacity} from "react-native";
+import{Text, View, StyleSheet, TouchableOpacity} from "react-native";
 export default function Cartel(props){
     const { materia, horario1, horario2 } = props       //Se lee lo que contienen las variables en el props
     return(
@@ -23,6 +23,7 @@ const estilo = StyleSheet.create({      //style para armar el cartel de materia
         margin: 20,
         width: 400,
         borderRadius: 20,
+        backgroundColor: 'chartreuse',
         borderColor: 'black',
         borderWidth: 3,
         alignItems: 'center',
