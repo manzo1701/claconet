@@ -65,15 +65,16 @@ const styles = StyleSheet.create({      //style para el fondo de la app
     flex: 1,
   },
   container2: {
-    backgroundColor: 'grey',
-    color: 'black',
+
+    borderColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
     width: 100,
+    borderWidth: 3,
     height: 30,
     padding: 10,
     margin: 10,
-    borderRadius: 10,
+    borderRadius: 20,
     fontFamily: 'Arial',
   }
 });
