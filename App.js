@@ -59,7 +59,7 @@ export default function App() {
 const styles = StyleSheet.create({      //style para el fondo de la app
   container: {
 
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
