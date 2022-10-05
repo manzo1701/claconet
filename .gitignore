@@ -27,7 +27,7 @@ project.xcworkspace
 build/
 .idea
 .gradle
-.firebase.config.js
+firebase.config.js
 local.properties
 *.iml
 *.hprof
