@@ -7,7 +7,6 @@ import 'react-native-gesture-handler';    //Se importa las caracteristicas de Re
 import bd from './firebase.config';
 
 
-
 export default function App() {
 
 
