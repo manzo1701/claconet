@@ -32,7 +32,7 @@ local.properties
 *.hprof
 
 
-.config.js
+/firebase.config.js
 
 # node.js
 #
