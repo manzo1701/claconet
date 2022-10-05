@@ -4,7 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import Cartel from './UI/components/cartelMaterias';    //Se importa el componente Cartel
 import { Bienvenida } from './UI/components/bienvenida';    //Se importa el componente Bienvenida
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
-
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 
 
