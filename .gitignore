@@ -27,10 +27,12 @@ project.xcworkspace
 build/
 .idea
 .gradle
-firebase.config.js
 local.properties
 *.iml
 *.hprof
+
+claconet/
+.firebase.config.js
 
 # node.js
 #
