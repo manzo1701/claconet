@@ -11,7 +11,7 @@ export default function LoginScreen(){
     const [hidePassword, setHidePassword] = useState(false)
 
         return(
-            <View style={[loginStyles.container]}>
+            <View style={[loginStyles.container, {padding:20}]}>
                 <StatusBar backgroundColor={Colors.BLUE} translucent={true}/>
                 <View style={[loginStyles.logo]}>
                     <Image source={require('@recursos/consultas.png')}
@@ -19,7 +19,7 @@ export default function LoginScreen(){
                     
                 </View>
                 <MyTextInput keyboardType='email-address' placeholder='E-mail' image='user'/>
-                <MyTextInput keyboardType={null} placeholder='contraseña' image='look'
+                <MyTextInput keyboardType={null} placeholder='contraseña' image='look'      
                 bolGone={true} secureTextEntry={hidePassword}
                 onPress={() => setHidePassword(!hidePassword)}/>
                 <View style={loginStyles.btnMain}>
@@ -41,5 +41,4 @@ export default function LoginScreen(){
                 </View>
             </View>
         )
-     
 } 

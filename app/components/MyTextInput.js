@@ -21,7 +21,7 @@ export default function MyTextInput(props){//Estoy recibiendo atraves de props, 
         rightIcon={props.bolGone? //opcion de ojo de contraseña
         <TouchableOpacity activeOpacity = { 0.8 } style={styles.btnVisibility} onPress = {props.onPress}>
         <Image style={ styles.btnImage} tintColor={Colors.PRIMARYCOLOR} 
-        source = { (props.secureTextEntry) ? require('@recursos/eye-icon.png') : require('@recursos/icon-password.jpg')}/>
+        source = {(props.secureTextEntry) ? require('@recursos/eye-icon.png') : require('@recursos/icon-password.jpg')}/>
         </TouchableOpacity>:
         <Icon size={24} color={Colors.PRIMARYCOLOR}
         type={'font-awesome'} name={props.imageRight}/>}
@@ -53,4 +53,3 @@ const styles = StyleSheet.create({
         width: '100%'
       },
 })
-
