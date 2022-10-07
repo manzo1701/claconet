@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MainStack from './Navigation/MainStack';
-import './Styles/Styles.scss'
+import './Styles/Styles.css'
 export default function App() {
   return (
     <View >
