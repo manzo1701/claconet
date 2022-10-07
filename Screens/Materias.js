@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import Boton from '../Components/Boton'
-import '../Styles/Styles.scss'
+import '../Styles/Styles.css'
 const Materias  = ({ navigation, props }) => {
   return (
     

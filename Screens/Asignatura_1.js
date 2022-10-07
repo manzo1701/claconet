@@ -3,6 +3,7 @@ import { Text, View, TextInput, Button, StyleSheet } from 'react-native'
 import Horario from '../Components/Horarios'
 import Profesor from '../Components/Profesor'
 import Boton from '../Components/Boton'
+import '../Styles/Styles'
 
 const Asignatura_1 = ({ navigation }) => {
   
@@ -32,7 +33,7 @@ const Asignatura_1 = ({ navigation }) => {
             
           </div>
 
-           <div className=' Boton_boton'> 
+           <div className=''> 
            <Boton
       text = "volver a la lista"
         onPress = {() => {
