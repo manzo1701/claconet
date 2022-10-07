@@ -29,19 +29,7 @@ const Asignatura_1 = ({ navigation }) => {
         </div>
 
         <div className='consulta'>
-              <form className='createForm' onSubmit={handleSubmit}>
-                <input
-                onChange={handleChange} 
-                className='Inputs' 
-                value={title}
-                />
-                <input 
-                 onClick={handleSubmit}
-                 type="submit" 
-                 value="Enviar Consulta" 
-                 className="botonCreate"
-                 />
-              </form>
+           
             
           </div>
 
