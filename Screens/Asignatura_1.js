@@ -6,26 +6,7 @@ import Boton from '../Components/Boton'
 import '../Styles/Styles.css'
 
 const Asignatura_1 = ({ navigation }) => {
-    const [title, setTitle] = useState("hola");
-    const [consulta, setConsulta] = useState([]);
-    
-    function handleChange(event) {
-      const value = event.target.value;
-
-      setTitle(value);
-    }
-    function handleSubmit(e){
-      e.preventDefault();
-      const newConsult = {
-        id: crypto.randomUUID(),
-        title: title,
-        completed: false
-      }
-      const list = [...consulta]
-      list.unshift(newConsult);
-setConsulta(list);
-    }
-    
+  
   return (
       <div className='body_Materia'>
         <div >
@@ -61,13 +42,7 @@ setConsulta(list);
                  className="botonCreate"
                  />
               </form>
-             <div className='consulta'>
-                {
-                  consulta.map((item) => (
-                    <div key={item.id}>{item.title}</div>
-                  ))}
-             </div>
-
+            
           </div>
 
            <div className=''> 
