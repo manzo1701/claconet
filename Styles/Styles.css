@@ -3,7 +3,9 @@
     padding: 0;
     font-family: Nunito-Light;
     src: url(../Resources/Nunito-Light.ttf);
-    background-color:darkgray ;
+    background-color: rgb(36,34,195);
+    background-color: linear-gradient(0deg, rgba(36,34,195,1) 0%, rgba(45,253,223,0.8939950980392157) 100%);
+    
 
 }
 
@@ -14,15 +16,10 @@
     justify-content: center;
     display: flex;
     margin: 20px;
-    background: rgb(36,34,195);
-background: linear-gradient(0deg, rgba(36,34,195,1) 0%, rgba(45,253,223,0.8939950980392157) 100%);
-
+    
     
 }
-.fondo{
-    background: rgb(36,34,195);
-    background: linear-gradient(0deg, rgba(36,34,195,1) 23%, rgba(45,253,223,0.8939950980392157) 100%);   
-}
+
 .body_Materia{
     display: flex;
     text-align: center;
