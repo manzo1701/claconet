@@ -17,7 +17,7 @@ const Stack = createNativeStackNavigator()
 
 const MainStack = () => {
     return (
-        <div >
+        <div>
 
             <NavigationContainer> 
         <Stack.Navigator
