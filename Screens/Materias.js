@@ -6,7 +6,7 @@ const Materias  = ({ navigation, props }) => {
   return (
     
     <div className='body'>
-      <div>
+      <div className='fondo'>
         <div className='boton'>
         <Boton
       text = "Programacion Web Dinamicas"

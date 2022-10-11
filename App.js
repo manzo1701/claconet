@@ -5,13 +5,15 @@ import MainStack from './Navigation/MainStack';
 import './Styles/Styles.css'
 export default function App() {
   return (
+    <div className='fondo'>
     <View >
-      <div >
+      
       <h1 className='header'>Claconet</h1>
 
       <MainStack />
-      </div>
+      
          </View>
+         </div>
   );
 }
 
