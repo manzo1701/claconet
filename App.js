@@ -1,17 +1,17 @@
 import React from 'react';
+import { render } from 'react-dom';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
 import HomeScreen from './src/screens/inicio';
 
 export default function App() {
 
-
-
-    return (  
-      <View style={styles.container}>  
-      <HomeScreen/>
-      </View>
-    )
+     
+      return(
+        <View style={styles.container}>
+          <HomeScreen/>
+        </View>
+      );
 }
 
 

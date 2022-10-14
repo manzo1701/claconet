@@ -10,12 +10,12 @@ const HomeStackScreen = () => {
     const HomeStack = createStackNavigator();
     return(
         <HomeStack.Navigator>
-            <HomeStack.Screen name='inicio' component={ HomeScreen }/>
+            <HomeStack.Screen name='HomeScreen' component={ HomeScreen }/>
             <HomeStack.Screen name='infoMateria' component={ infoMateria }/>
         </HomeStack.Navigator>
     );
 };
 
-//contenedor que que maneja el arbol de navegacion
+//contenedor que maneja el arbol de navegacion
 
 export default HomeStackScreen;
