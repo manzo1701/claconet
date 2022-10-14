@@ -1,7 +1,7 @@
 import React from "react";
 import{Text, View, StyleSheet, TouchableOpacity, Button} from "react-native";
 import 'react-native-gesture-handler';
-export default function Cartel(props){
+const Cartel = (props) => {
     const { materia, horario1, horario2 } = props       //Se lee lo que contienen las variables en el props
 
     return(
@@ -16,7 +16,7 @@ export default function Cartel(props){
 
 }
 
-
+export default Cartel;
 const estilo = StyleSheet.create({      //style para armar el cartel de materia
     contenedor:{
         padding: 15,
