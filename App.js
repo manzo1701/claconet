@@ -1,8 +1,5 @@
 import React from 'react';
-import { FaGoogle } from 'react-icons/fa';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
-import Cartel from './UI/components/cartelMaterias';    //Se importa el componente Cartel
-import { Bienvenida } from './UI/components/bienvenida';    //Se importa el componente Bienvenida
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
 import HomeScreen from './src/screens/inicio';
 

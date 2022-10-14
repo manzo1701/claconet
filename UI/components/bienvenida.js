@@ -17,5 +17,6 @@ const styles = StyleSheet.create({
     estilo:{
         fontSize: 14,
         fontFamily: 'Arial',
+        alignItems: 'center'
     }
 })

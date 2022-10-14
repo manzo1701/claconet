@@ -6,7 +6,7 @@ import Cartel from '../../UI/components/cartelMaterias'
 const HomeScreen = (props) => {
 
     return(
-        <View>
+        <View style={{justifyContent: 'center', flex: 1, alignContent: 'center'}}>
             <Bienvenida profesor = "Wiedermann"/>
             <Cartel
             materia = "Programación Web Dinámica"
@@ -40,5 +40,6 @@ const HomeScreen = (props) => {
         </View>
     )
 }
+
 
 export default HomeScreen;
