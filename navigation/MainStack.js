@@ -1,4 +1,3 @@
-//COMPONENTE EN PRUEBA, AUN NO SE IMPLEMENTA
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation

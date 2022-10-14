@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
-import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
 import HomeScreen from './src/screens/inicio';
 
 export default function App() {

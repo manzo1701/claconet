@@ -2,7 +2,6 @@ import { Text, View, Button } from 'react-native'
 import React from 'react'
 import { Bienvenida } from '../../UI/components/bienvenida'
 import Cartel from '../../UI/components/cartelMaterias'
-import { render } from 'react-dom'
 
 const HomeScreen = () => {
 
