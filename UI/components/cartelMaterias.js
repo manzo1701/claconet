@@ -1,12 +1,13 @@
 import React from "react";
 import{Text, View, StyleSheet, TouchableOpacity} from "react-native";
+import 'react-native-gesture-handler';
 export default function Cartel(props){
     const { materia, horario1, horario2 } = props       //Se lee lo que contienen las variables en el props
     return(
 
         
         <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('infoMateria')}>
             <Text style={estilo.contenedor}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
 
             </TouchableOpacity>

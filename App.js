@@ -4,8 +4,7 @@ import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import Cartel from './UI/components/cartelMaterias';    //Se importa el componente Cartel
 import { Bienvenida } from './UI/components/bienvenida';    //Se importa el componente Bienvenida
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
-import bd from './firebase.config';
-
+import HomeScreen from './src/screens/inicio';
 
 export default function App() {
 
@@ -15,41 +14,7 @@ export default function App() {
       
         
         <View style={styles.container}>
-          <FaGoogle style={{flex: 1, padding: 5}}></FaGoogle>
-          <View>
-            <TouchableOpacity style={styles.container2}>LogOut</TouchableOpacity>
-          </View>
-          <Bienvenida profesor = "Wiedermann"/>
-          <Cartel
-            materia = "Programación Web Dinámica"
-            horario1 = "18:30"
-            horario2 = "20:30"
-
-    
-          />
-          <Cartel
-            materia = "Programación Web Estática"
-            horario1 = "15:00"
-            horario2 = "16:30"
-          />
-
-          <Cartel
-            materia = "Sistemas Operativos I"
-            horario1 = "14:20"
-            horario2 = "15:50"
-  
-          />
-          <Cartel
-            materia = "Seguridad Informática"
-            horario1 = "19:20"
-            horario2 = "20:50"
-          />
-          <Cartel
-            materia = "Testing"
-            horario1 = "16:50"
-            horario2 = "17:50"
-          />
-
+          <HomeScreen/>
         </View>     //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
         
 
