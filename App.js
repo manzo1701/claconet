@@ -7,15 +7,10 @@ export default function App() {
 
 
 
-    return (
-      
-        
-        <View style={styles.container}>
-          <HomeScreen/>
-        </View>     //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
-        
-
-    
+    return (  
+      <View style={styles.container}>  
+      <HomeScreen/>
+      </View>
     )
 }
 

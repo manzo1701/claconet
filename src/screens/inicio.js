@@ -3,10 +3,10 @@ import React from 'react'
 import { Bienvenida } from '../../UI/components/bienvenida'
 import Cartel from '../../UI/components/cartelMaterias'
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
 
     return(
-        <View style={{justifyContent: 'center', flex: 1, alignContent: 'center'}}>
+        <View>
             <Bienvenida profesor = "Wiedermann"/>
             <Cartel
             materia = "Programación Web Dinámica"
@@ -37,7 +37,7 @@ const HomeScreen = (props) => {
             horario1 = "16:50"
             horario2 = "17:50"
           />
-        </View>
+        </View>             //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
     )
 }
 

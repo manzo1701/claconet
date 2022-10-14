@@ -7,7 +7,7 @@ export default function Cartel(props){
 
         
         <View>
-            <TouchableOpacity onPress={() => this.props.navigation.navigate('infoMateria')}>
+            <TouchableOpacity onPress={() => navigation.navigate('infoMateria')}>
             <Text style={estilo.contenedor}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
 
             </TouchableOpacity>
