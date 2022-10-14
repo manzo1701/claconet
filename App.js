@@ -15,9 +15,9 @@ export default function App() {
       
         
         <View style={styles.container}>
+          <FaGoogle style={{flex: 1, padding: 5}}></FaGoogle>
           <View>
-            <FaGoogle style={styles.boton}></FaGoogle>
-            <TouchableOpacity style={styles.boton}>LogOut</TouchableOpacity>
+            <TouchableOpacity style={styles.container2}>LogOut</TouchableOpacity>
           </View>
           <Bienvenida profesor = "Wiedermann"/>
           <Cartel
