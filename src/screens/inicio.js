@@ -1,18 +1,14 @@
-import { Text, View } from 'react-native'
+import { Text, View, Button } from 'react-native'
 import React from 'react'
 import { Bienvenida } from '../../UI/components/bienvenida'
 import Cartel from '../../UI/components/cartelMaterias'
-import { Button } from 'react-native-web'
+import { render } from 'react-dom'
 
 const HomeScreen = () => {
 
         return(
             <View>
                 <Bienvenida profesor = "Wiedermann"/>
-                <Button
-                    title= "ir a info de materia"
-                    onPress={() => navigation.navigate("infoMateria")}
-                />
             
             <Cartel 
             materia = "Programación Web Dinámica"
@@ -46,5 +42,4 @@ const HomeScreen = () => {
         </View>             //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
     )
 }
-
 export default HomeScreen;

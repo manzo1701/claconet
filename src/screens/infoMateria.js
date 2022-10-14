@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-import { Bienvenida } from '../../UI/components/bienvenida';
+import { render } from 'react-dom'
 
 const infoMateria = () => {
 
@@ -12,5 +12,4 @@ const infoMateria = () => {
     </View>
   )
 }
-
 export default infoMateria;

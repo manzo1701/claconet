@@ -7,7 +7,7 @@ export default function Cartel(props){
     return(
 
         <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("infoMateria")}>
             <Text style={estilo.contenedor}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
             </TouchableOpacity>
         </View>     //Se arma un cartel con la información que se extrajo del props para mostrar la info de la materia
