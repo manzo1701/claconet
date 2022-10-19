@@ -12,12 +12,8 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    background-size: 400% 400%;
-    background: linear-gradient(45deg,#00008b,#008b8b,blue,white);
-    position: relative;
-    margin: 0;
-    padding: 0;
-   
+
+ 
     
 }
 
