@@ -15,8 +15,13 @@
     background-image: url(../Resources/pngtree-vector-question-icon-png-image_1660725.jpg);
     background-repeat: no-repeat;
     background-size: 20%;
+    
+    /*---animacion---*/
+    animation-name: ;
 }
-
+@keyframes movilidadimg{
+    
+}
 
 
 
