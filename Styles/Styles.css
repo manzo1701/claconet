@@ -18,6 +18,7 @@
     
     /*---animacion---*/
     animation-name: movilidadimg;
+    animation-duration: 3s;
 }
 @keyframes movilidadimg{
     0%{
