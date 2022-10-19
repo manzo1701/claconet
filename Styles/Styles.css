@@ -5,36 +5,21 @@
     src: url(../Resources/Nunito-Light.ttf);
     
 }
-/*----- fondo y animacion-------*/
+
 .body{
     font-size: 80px;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
-    background-image: url(../Resources/pngtree-vector-question-icon-png-image_1660725.jpg);
-    background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 400% 400%;
+    background: linear-gradient(45deg,#00008b,#008b8b,blue,white);
+    position: relative;
+    margin: 0;
+    padding: 0;
+   
     
-    /*---animacion---*/
-    animation-name: movilidadimg;
-    animation-duration: 3s;
 }
-@keyframes movilidadimg{
-    0%{
-        background-color: red;
-    }
-    100%{
-        background-color: aquamarine;
-    }
-}
-
-
-
-
-
-
-/*----------fin fondo y animacion---------*/
 
 .body_Materia{
     display: flex;
