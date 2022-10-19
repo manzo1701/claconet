@@ -17,13 +17,15 @@
     background-size: 20%;
     
     /*---animacion---*/
-    animation-name: ;
+    animation-name: movilidadimg;
 }
 @keyframes movilidadimg{
     0%{
         background-color: red;
     }
-}
+    100%{
+        background-color: aquamarine;
+    }
 
 
 
