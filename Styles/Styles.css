@@ -5,17 +5,25 @@
     src: url(../Resources/Nunito-Light.ttf);
     
 }
-
+/*----- fondo y animacion-------*/
 .body{
     font-size: 80px;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
-    background-image: url(../Resources/fondo.jpg);
+    background-image: url(../Resources/signo-pregunta.png);
     
 }
 
+
+
+
+
+
+
+
+/*----------fin fondo y animacion---------*/
 .body_Materia{
     display: flex;
     text-align: center;
