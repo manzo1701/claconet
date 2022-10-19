@@ -4,7 +4,7 @@
     font-family: Nunito-Light;
     src: url(../Resources/Nunito-Light.ttf);
     background-color: rgb(36,34,195);
-    background-color: linear-gradient(0deg, rgba(36,34,195,1) 0%, rgba(45,253,223,1) 100%);
+    background-color: linear-gradient(45deg, red, blue, green, black);
 }
 
 .body{
