@@ -3,8 +3,7 @@
     padding: 0;
     font-family: Nunito-Light;
     src: url(../Resources/Nunito-Light.ttf);
-    background-color: rgb(36,34,195);
-    background-color: linear-gradient(45deg, red, blue, green, black);
+    
 }
 
 .body{
@@ -14,6 +13,9 @@
     justify-content: center;
     display: flex;
     margin: 20px;
+    background-size: 400% 400%;
+    background: linear-gradient(45deg,#00008b,#008b8b,blue,white);
+    position: relative;
     
     
 }
