@@ -27,7 +27,7 @@
     100%{
         background-color: aquamarine;
     }
-
+}
 
 
 
@@ -35,6 +35,7 @@
 
 
 /*----------fin fondo y animacion---------*/
+
 .body_Materia{
     display: flex;
     text-align: center;
