@@ -13,7 +13,14 @@ export default function App() {
 
       <MainStack/>
       <div className='video'>
-<Video source={require('./Resources/background.mp4')} repeat resizeMode='cover' muted rate={1.0}/>
+       
+         <Video source={require('./Resources/background.mp4')} 
+         repeat 
+         resizeMode='cover' 
+         muted 
+         rate={1.0}
+         />
+
       </div>
       
          </View>
