@@ -3,7 +3,6 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MainStack from './Navigation/MainStack';
 import './Styles/Styles.css'
-import Video from 'react-native-video'
 export default function App() {
   return (
     <div className='fondo'>
