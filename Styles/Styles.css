@@ -35,11 +35,9 @@
 .box_1{
     background-color: dodgerblue;
     color: antiquewhite;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-bottom: 5px solid whitesmoke;
+    border: 5px solid whitesmoke;
     display: block;
-
+    border-radius: 8px;
 }
 .return{
     display: flex;
