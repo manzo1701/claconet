@@ -28,7 +28,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    line-height: 35px;
+ 
     margin: 20px;
     font-size:20px;
 }
@@ -38,12 +38,14 @@
     border: 5px solid whitesmoke;
     display: inline-block;
     border-radius: 8px;
+    line-height: 35px;
 }
 .box_2{
     background-color: aquamarine;    
     border: 5px solid whitesmoke;
     display: inline-block;
     border-radius: 8px;
+    line-height: 35px;
 }
 .return{
     display: flex;
