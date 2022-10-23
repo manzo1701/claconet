@@ -36,14 +36,14 @@
     background-color: dodgerblue;
     color: antiquewhite;
     border: 5px solid whitesmoke;
-    display: inline-block;
+    display: block;
     border-radius: 8px;
     line-height: 35px;
 }
 .box_2{
     background-color: aquamarine;    
     border: 5px solid whitesmoke;
-    display: inline-block;
+    display: block;
     border-radius: 8px;
     line-height: 35px;
 }
