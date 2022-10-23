@@ -12,8 +12,10 @@ import Asignatura_7 from '../Screens/Asignatura_7'
 import Asignatura_8 from '../Screens/Asignatura_8'
 import Asignatura_9 from '../Screens/Asignatura_9'
 import '../Styles/Styles.css'
+import { Easing } from 'react-native'
 
 const Stack = createNativeStackNavigator()
+
 
 const MainStack = () => {
     return (
@@ -22,8 +24,14 @@ const MainStack = () => {
             <NavigationContainer> 
         <Stack.Navigator
         screenOptions= {{
-            headerShown: false,
-        }}
+            transitionSpec: {
+                headerShown: false,
+                open: config,
+                close: closeConfig,    
+
+            },
+            cardStyleInterpolators: CardStyleInterpolators.forHorizontalIOS
+            }}
         > 
 
             <Stack.Screen 
