@@ -41,11 +41,11 @@
     line-height: 35px;
 }
 .box_2{
-    background-color: aquamarine;    
     border: 5px solid whitesmoke;
     display: block;
     border-radius: 8px;
     line-height: 35px;
+    padding-top: 45px;
 }
 .return{
     display: flex;
