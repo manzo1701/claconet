@@ -24,7 +24,7 @@
 
 /*----finAnimacion----*/
 .body_Materia{
-    display: flex;
+    display: inline;
     text-align: center;
     align-items: center;
     justify-content: center;
