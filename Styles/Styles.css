@@ -42,12 +42,7 @@
 }
 .box_2{
     background-color: dodgerblue;
-    border: 5px solid whitesmoke;
-    display: block;
-    border-radius: 8px;
-    
-   
-    margin-bottom: 16%;
+ 
 }
 .return{
     display: flex;
