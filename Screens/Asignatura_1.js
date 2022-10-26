@@ -13,19 +13,19 @@ const Asignatura_1 = ({ navigation }) => {
           <div>
           <h2>asignatura</h2>
           </div>
-          <di>
-            <div className='box_1'>
+          <div className='box_1'>
+            <div >
             <Profesor
                 profe= "manuel"
             />
             </div>
           
-            <div className='box_2'>
+            <div >
               <Horario
                 hora= "9:00 a 10:00"
               />
             </div>
-          </di>
+          </div>
         </div>
 
         <div className='consulta'>
