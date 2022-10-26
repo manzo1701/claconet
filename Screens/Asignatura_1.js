@@ -13,7 +13,7 @@ const Asignatura_1 = ({ navigation }) => {
           <div>
           <h2>asignatura</h2>
           </div>
-          <div>
+          <di>
             <div className='box_1'>
             <Profesor
                 profe= "manuel"
@@ -25,7 +25,7 @@ const Asignatura_1 = ({ navigation }) => {
                 hora= "9:00 a 10:00"
               />
             </div>
-          </div>
+          </di>
         </div>
 
         <div className='consulta'>
