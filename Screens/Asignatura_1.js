@@ -10,7 +10,7 @@ const Asignatura_1 = ({ navigation }) => {
   return (
       <div className='body_Materia'>
         <div >
-          <div>
+          <div className='asignature'>
           <h2>asignatura</h2>
           </div>
           <div >
