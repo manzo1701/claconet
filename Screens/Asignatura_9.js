@@ -16,7 +16,7 @@ const Asignatura_1 = ({ navigation }) => {
           <div >
             <div className='box_1'>
             <Profesor
-                profe= "manuel"
+                profe= "Exequiel"
             />
             </div>
           
