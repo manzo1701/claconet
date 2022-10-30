@@ -7,6 +7,7 @@ const HomeScreen = () => {
 
         return(
             <View>
+              
                 <Bienvenida profesor = "Wiedermann"/>
             
             <Cartel 

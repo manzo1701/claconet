@@ -2,7 +2,7 @@ import { View, Text, Button } from 'react-native'
 import React from 'react'
 
 
-const infoMateria = () => {
+ infoMateria = () => {
 
   return(
 
@@ -10,7 +10,7 @@ const infoMateria = () => {
       <Text>Materia: Testing</Text>
       <Button 
         title='Volver'
-        onPress={() => navigation.navigate("HomeScreen")}
+        onPress={() => navigation.goBack()}
       />
     </View>
   )
