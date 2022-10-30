@@ -9,7 +9,7 @@ const Cartel = (props) => {
         <View>
             <TouchableOpacity style={estilo.contenedor}>
             <Text>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
-            <Button title="Editar" onPress={() => navigation.navigate("infoMateria")}></Button>
+            <TouchableOpacity style={estilo.boton} onPress={() => navigation.navigate("infoMateria")}><Text>Editar</Text></TouchableOpacity>
             </TouchableOpacity>
         </View>     //Se arma un cartel con la información que se extrajo del props para mostrar la info de la materia
         
@@ -30,6 +30,15 @@ const estilo = StyleSheet.create({      //style para armar el cartel de materia
         justifyContent: 'center',
         fontSize: 24,
     },
+    boton:{
+        width: 50,
+        borderColor: 'black',
+        marginTop: 10,
+        borderWidth: 2,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        alignItems: 'center',
+    }
     
 
 })
