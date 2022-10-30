@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import HomeStackScreen from './navigation/MainStack';
 import HomeScreen from './src/screens/inicio';
 
 export default function App() {
@@ -7,7 +8,7 @@ export default function App() {
      
       return(
         <View style={styles.container}>
-          <HomeScreen/>
+          <HomeStackScreen/>
         </View>
       );
 }

@@ -2,7 +2,7 @@ import { View, Text, Button } from 'react-native'
 import React from 'react'
 
 
- infoMateria = () => {
+const infoMateria = () => {
 
   return(
 
