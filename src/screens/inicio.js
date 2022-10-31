@@ -2,21 +2,24 @@ import { Text, View, Button } from 'react-native'
 import React from 'react'
 import { Bienvenida } from '../../UI/components/bienvenida'
 import Cartel from '../../UI/components/cartelMaterias'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const HomeScreen = () => {
 
         return(
             <View>
               
-                <Bienvenida profesor = "Wiedermann"/>
-            
+            <Bienvenida profesor = "Wiedermann"/>
+
+            <TouchableOpacity style={{alignItems: 'center', backgroundColor: 'lightgrey', width: 60, borderRadius: 10, left: 185, borderColor: 'black', borderWidth: 2}}>Editar</TouchableOpacity>
+
             <Cartel 
             materia = "Programación Web Dinámica"
             horario1 = "18:30"
             horario2 = "20:30"
 
     
-          />
+            />
           <Cartel
             materia = "Programación Web Estática"
             horario1 = "15:00"

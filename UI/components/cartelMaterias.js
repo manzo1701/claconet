@@ -38,6 +38,8 @@ const estilo = StyleSheet.create({      //style para armar el cartel de materia
         backgroundColor: 'white',
         borderRadius: 10,
         alignItems: 'center',
+        position: 'relative',
+        left: 310,
     }
     
 
