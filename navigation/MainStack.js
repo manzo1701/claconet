@@ -3,6 +3,7 @@ import 'react-native-gesture-handler';    //Se importa las caracteristicas de Re
 import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from '../src/screens/inicio';
 import infoMateria from '../src/screens/infoMateria';
+import FormCrear from '../UI/components/formCrear';
 
 
 const HomeStackScreen = () => {
@@ -12,6 +13,7 @@ const HomeStackScreen = () => {
         <HomeStack.Navigator>
             <HomeStack.Screen name='HomeScreen' component={ HomeScreen }/>
             <HomeStack.Screen name='infoMateria' component={ infoMateria }/>
+            <HomeStack.Screen name='form' component={ FormCrear }/>
         </HomeStack.Navigator>
     );
 };
