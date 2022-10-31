@@ -11,7 +11,7 @@ const HomeScreen = () => {
               
             <Bienvenida profesor = "Wiedermann"/>
 
-            <TouchableOpacity style={{alignItems: 'center', backgroundColor: 'lightgrey', width: 60, borderRadius: 10, left: 185, borderColor: 'black', borderWidth: 2}}>Editar</TouchableOpacity>
+            <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', backgroundColor: 'lightgrey', width: 120, borderRadius: 10, left: 155, borderColor: 'black', borderWidth: 2, height: 30}}>Agregar clase</TouchableOpacity>
 
             <Cartel 
             materia = "Programación Web Dinámica"
