@@ -3,7 +3,8 @@ import React from 'react'
 import { Bienvenida } from '../../UI/components/bienvenida'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 
-const HomeScreen = ({ navigation }) => {
+
+const HomeScreen = () => {
 
         return(
             <View>

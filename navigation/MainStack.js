@@ -1,10 +1,13 @@
 import React from 'react';
 import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
 import { createStackNavigator } from 'react-navigation-stack';
+import crearMateria from '../src/screens/crearMateria';
+import infoMateria from '../src/screens/infoMateria';
+import HomeScreen from '../src/screens/inicio';
 
 
 
-const HomeStackScreen = () => {
+function HomeStackScreen() {
 
     const HomeStack = createStackNavigator();
     return(
