@@ -1,18 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
+import 'react-native-gesture-handler';
 import HomeScreen from './src/screens/inicio';
+console.reportErrorsAsExceptions = false;
 
-export default function App() {
 
-     
-      return(
-        <View style={styles.container}>
-          <HomeScreen/>
-        </View>
-      );
+const App = () => {
+
+  return(
+    <HomeScreen/>
+  )
 }
-
-
+export default App;
 
 const styles = StyleSheet.create({      //style para el fondo de la app
   container: {

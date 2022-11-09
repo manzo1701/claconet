@@ -1,22 +1,36 @@
-import { Text, View, Button } from 'react-native'
+import { Text, View } from 'react-native'
+import { StyleSheet } from 'react-native'
 import React from 'react'
-import { Bienvenida } from '../../UI/components/bienvenida'
-import { TouchableOpacity } from 'react-native-gesture-handler'
+import Boton from '../../UI/components/Boton'
 
 
-const HomeScreen = () => {
+const HomeScreen = () =>{
 
-        return(
-            <View>
-              
-            <Bienvenida profesor = "Wiedermann"/>
 
-            <TouchableOpacity style={{justifyContent: 'center', alignItems: 'center', backgroundColor: 'lightgrey', width: 120, borderRadius: 10, left: 100, borderColor: 'black', borderWidth: 2, height: 30}} onPress={() => navigation.navigate('form')}>
-              
-              Agregar clase</TouchableOpacity>
+    return(
 
+        <View style={style.boton}>
+            <Text>Agrega una nueva clase de consulta</Text>
+            <div>
+                <Boton/>
+            </div>
             
-        </View>             //Se guarda, por cada componente Cartel, en cada variable los datos para que despues se lean desde el props
+        </View>
     )
 }
+
+
 export default HomeScreen;
+
+
+const style = StyleSheet.create({
+
+    boton: {
+        flex: 1,
+        margin: 10,
+        padding: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+
+    }
+})

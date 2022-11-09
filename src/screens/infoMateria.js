@@ -2,17 +2,20 @@ import { View, Text, Button } from 'react-native'
 import React from 'react'
 
 
-const infoMateria = () => {
+const infoMateria = (props) => {
+ 
+    return(
 
-  return(
-
-    <View>
-      <Text>Materia: Testing</Text>
-      <Button 
-        title='Volver'
-        onPress={() => navigation.goBack()}
-      />
-    </View>
-  )
+      <View>
+        <Text>Materia: Testing</Text>
+        <Button 
+          title='Volver'
+          onPress={() =>
+              navigation.navigate('home')
+            
+          }
+        />
+      </View>
+    )
 }
 export default infoMateria;

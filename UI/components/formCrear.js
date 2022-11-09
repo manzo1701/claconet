@@ -1,36 +1,54 @@
-import { View, Text, TextInput } from 'react-native'
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Formulario extends Component{
-    constructor(){
-        super()
+export default class Formulario extends React.Component{
+    constructor(props){
+        super(props)
 
         this.state = {
             clase: '',
-            profesor: ''
+            profesor: '',
+            horario1: '',
+            horario2: '',
         }
     }
-    changeClase(clase){
-        this.setState({clase})
-    }
-    changeProfesor(profesor){
-        this.setState({profesor})
-    }
+
     render() {
+        const { clase, profesor, horario1, horario2 } = this.state
         return(
-            <View style={styles.contenedor}>
-                <TextInput
-                    style={styles.input}
-                    placeholder='clase'
-                    value={this.state.clase}
-                    onChangeText={(clase) => this.changeClase(clase)}
-                />
-                <TextInput
-                    placeholder='profesor'
-                    value={this.state.profesor}
-                    onChangeText={(profesor) => this.changeProfesor(profesor)}
-                />
-            </View>
+            <div>
+                <form>
+                    <label for>
+                        Clase:
+                        <input
+                            type='text'
+                            value={clase}
+                            onChange={(e) => this.setState({ clase: e.target.value})}
+                        />
+                    </label>
+                    <label for>
+                        Profesor:
+                        <input
+                            type='text'
+                            value={profesor}
+                            onChange={(e) => this.setState({ profesor: e.target.value})}
+                        />
+                    </label>
+                    <label for>
+                        <input
+                            type='text'
+                            value={horario1}
+                            onChange={(e) => this.setState({ horario1: e.target.value})}
+                        />
+                    </label>
+                    <label for>
+                        <input
+                            type='text'
+                            value={horario2}
+                            onChange={(e) => this.setState({ horario2: e.target.value})}
+                        />
+                    </label>
+                </form>
+            </div>
         )
     }
 
