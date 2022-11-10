@@ -1,5 +1,4 @@
-import React from 'react';
-import 'react-native-gesture-handler';    //Se importa las caracteristicas de React Navigation
+import React from 'react';    //Se importa las caracteristicas de React Navigation
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import crearMateria from '../src/screens/crearMateria';
@@ -8,7 +7,7 @@ import HomeScreen from '../src/screens/inicio';
 
 const Stack = createNativeStackNavigator();
 
-const mainStack = () => {
+const MainStack = () => {
 
     return(
     <NavigationContainer>
@@ -32,7 +31,7 @@ const mainStack = () => {
 
 
 
-export default mainStack;
+export default MainStack;
 
 //contenedor que maneja el arbol de navegacion
 

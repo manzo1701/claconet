@@ -4,7 +4,7 @@ import React from 'react'
 import Boton from '../../UI/components/Boton'
 
 
-const HomeScreen = () =>{
+const HomeScreen = ({ navigation }) =>{
 
 
     return(

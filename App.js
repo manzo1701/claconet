@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet } from 'react-native';
 import 'react-native-gesture-handler';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import HomeScreen from './src/screens/inicio';
 console.reportErrorsAsExceptions = false;
 
@@ -8,7 +8,9 @@ console.reportErrorsAsExceptions = false;
 const App = () => {
 
   return(
-    <HomeScreen/>
+    <View style={styles.container}>
+      <HomeScreen/>
+    </View>
   )
 }
 export default App;
