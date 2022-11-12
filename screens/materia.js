@@ -1,7 +1,7 @@
 import { Text, View } from 'react-native'
 import React from 'react'
 
-const Materia = ({ navigation }) => {
+const Materia = () => {
 
     return(
         <View>

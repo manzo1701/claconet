@@ -1,9 +1,8 @@
-import 'react-native-gesture-handler';
 import React from 'react';    //Se importa las caracteristicas de React Navigation
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
-import Materia from '../screens/materia';
+import Materia from '../screens/Materia';
 
 
 const Stack = createNativeStackNavigator();
@@ -12,14 +11,14 @@ const MainStack = () => {
 
     return(
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName='Home'>
                 <Stack.Screen
                     name = 'Home'
-                    component={ HomeScreen }
+                    component = { HomeScreen }
                 />
                 <Stack.Screen
                     name = 'Materia'
-                    component={ Materia }
+                    component = { Materia }
                 />
             </Stack.Navigator>
         </NavigationContainer>

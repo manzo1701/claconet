@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import Boton from '../UI/components/Boton';
 import Cartel from '../UI/components/cartelMaterias';
 
 const HomeScreen = ({ navigation }) => {
@@ -10,11 +11,9 @@ const HomeScreen = ({ navigation }) => {
 
             <Text style={{fontSize: 24}}>Agrega una nueva clase</Text><br></br>
             
-            <Button
-                title='Crear Materia'
-                onPress={() => 
-                    navigation.navigate('Materia')
-                }
+            <Boton
+                text= 'Agregar'
+                onPress = {() => navigation.navigate('Materia')}
             />
             
             
