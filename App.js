@@ -1,14 +1,12 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import MainStack from './navigation/MainStack';
-console.reportErrorsAsExceptions = false;
 
 function App() {
   
   return(
 
-    <View style={{flex:1, justifyContent: 'center', alignContent: 'center'}}>
-
+    <View style={styles.container}>
       <MainStack/>
     </View>
   )
@@ -18,11 +16,9 @@ export default App;
 const styles = StyleSheet.create({      //style para el fondo de la app
   container: {
 
-    backgroundColor: 'white',
-    alignItems: 'center',
+    alignContent: 'center',
     justifyContent: 'center',
-    flex: 1
-
+    flex: 1,
   }
 
 })

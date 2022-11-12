@@ -17,6 +17,7 @@ const HomeScreen = ({ navigation }) => {
             />
             
             
+            
             <br></br>
 
             <Text style={{fontSize: 24}}>Mis clases</Text>
@@ -38,8 +39,10 @@ const HomeScreen = ({ navigation }) => {
             />
         </View>
 
+    
     )
 }
+
 
 
 

@@ -1,12 +1,17 @@
 import { Text, View } from 'react-native'
 import React from 'react'
+import Boton from '../UI/components/Boton';
 
-const Materia = () => {
+const Materia = ({ navigation }) => {
 
     return(
-        <View>
+        <View style={{flex: 1}}>
 
             <Text>Buenas</Text>
+            <Boton
+                text= 'volver'
+                onPress = {()=> navigation.navigate("Home")}
+            />
         </View>
     )
 }
