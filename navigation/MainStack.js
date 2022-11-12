@@ -11,7 +11,7 @@ const MainStack = () => {
 
     return(//initialRouteName hace que la primera pantalla que se vea al abrir la app sea Home.
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='Home'>
+            <Stack.Navigator initialRouteName='Materia'>
                 <Stack.Screen
                     name = "Home"
                     component = { HomeScreen }

@@ -1,15 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 import Boton from '../UI/components/Boton';
 import Cartel from '../UI/components/cartelMaterias';
 
 const HomeScreen = ({ navigation }) => {
+
 
     return(
         
         <View style={{alignItems: 'center'}}>
 
             <Text style={{fontSize: 24}}>Agrega una nueva clase</Text><br></br>
+            
             
             <Boton
                 text= 'Agregar'
