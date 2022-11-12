@@ -10,7 +10,8 @@ const Cartel = (props) => {
         <View>
             <TouchableOpacity style={estilo.contenedor}>
             <Text style={{fontSize: 22}}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
-            <TouchableOpacity style={estilo.boton}><Text>Editar</Text></TouchableOpacity>
+            <TouchableOpacity style={estilo.boton}
+            ><Text>Editar</Text></TouchableOpacity>
             </TouchableOpacity>
         </View>     //Se arma un cartel con la información que se extrajo del props para mostrar la info de la materia
         
