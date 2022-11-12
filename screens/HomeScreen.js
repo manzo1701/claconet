@@ -16,6 +16,7 @@ const HomeScreen = ({ navigation }) => {
                     navigation.navigate('Materia')
                 }, 1000)
             }
+            
             /><br></br>
 
             <Text style={{fontSize: 24}}>Mis clases</Text>
