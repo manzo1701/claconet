@@ -1,7 +1,8 @@
-import { Text, View, TextInput, StyleSheet } from 'react-native'
+import { Text, View, TextInput, StyleSheet, Button, createElement } from 'react-native'
 import React, { useState } from 'react'
 import Boton from '../UI/components/Boton';
-import { Button } from 'react-native-web';
+
+
 
 const Materia = ({ navigation }) => {
 
@@ -16,8 +17,42 @@ const Materia = ({ navigation }) => {
         setState({ ...state, [nom]: value})
     }
 
+    const agregarClase = () => {
+
+        if(state.nom === ''){
+
+            alert('Completa todos los campos')
+        } else if (state.desde === ''){
+
+            alert('Completa todos los campos')
+        } else if(state.hasta === ''){
+            alert('Completa todos los campos')
+        } else{
+
+        }
+    }
+
+    /*const guardarClase = async () => {
+
+        if(state.nom === ''){
+            alert('Pon un nombre a la clase')
+        } else {
+           await bd.collection('clases').add({
+
+            horario1: state.desde,
+            horario2: state.hasta,
+            nombre: state.nom,
+            profesor: 'wiedermann'
+           })
+            console.log('Agregado')
+        }
+    }*/
+
+
     return(
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+
+            <Text style={{fontSize: 24, marginBottom: 10}}>Crea una nueva clase de consulta...</Text>
 
             <TextInput style={estilo.input} placeholder='Nombre de la materia'
                 onChangeText={(value) => handleChangeText('nom', value)}
@@ -29,11 +64,14 @@ const Materia = ({ navigation }) => {
                 onChangeText={(value) => handleChangeText('hasta', value)}
             />
 
-            <Button title='Subir' onPress={() => console.log(state)}/>
+            <Button title='Subir' onPress={() => agregarClase()}/><br></br>
+
             <Boton
-                text= 'volver'
+                text= 'Volver'
                 onPress = {()=> navigation.navigate("Home")}
             />
+
+            
         </View>
     )
 }

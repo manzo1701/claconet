@@ -24,18 +24,18 @@ const HomeScreen = ({ navigation }) => {
 
             <Text style={{fontSize: 24}}>Mis clases</Text>
             <Cartel 
-                materia='Programación Web Dinámica'
+                nom = 'Programación Web Dinámica'
                 horario1='18:00'
                 horario2='19:20'
             />
 
             <Cartel
-                materia='Seguridad Informática'
+                nom = 'Seguridad Informática'
                 horario1='22:20'
                 horario2='23:00'
             />
             <Cartel
-                materia='Programación Web Estática'
+                nom = 'Programación Web Estática'
                 horario1='19:30'
                 horario2='20:50'
             />

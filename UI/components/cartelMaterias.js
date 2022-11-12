@@ -3,13 +3,13 @@ import React from "react";
 import{Text, View, StyleSheet, TouchableOpacity, Button} from "react-native";
 
 const Cartel = (props) => {
-    const { materia, horario1, horario2 } = props       //Se lee lo que contienen las variables en el props
+    const { nom, horario1, horario2 } = props       //Se lee lo que contienen las variables en el props
 
     return(
 
         <View>
             <TouchableOpacity style={estilo.contenedor}>
-            <Text style={{fontSize: 22}}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
+            <Text style={{fontSize: 22}}>Materia: { nom }<br></br>Horario: {horario1} a {horario2}</Text>
             <TouchableOpacity style={estilo.boton}
             ><Text>Editar</Text></TouchableOpacity>
             </TouchableOpacity>
