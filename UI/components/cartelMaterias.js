@@ -1,6 +1,7 @@
+import 'react-native-gesture-handler';
 import React from "react";
 import{Text, View, StyleSheet, TouchableOpacity, Button} from "react-native";
-import 'react-native-gesture-handler';
+
 const Cartel = (props) => {
     const { materia, horario1, horario2 } = props       //Se lee lo que contienen las variables en el props
 
@@ -8,8 +9,8 @@ const Cartel = (props) => {
 
         <View>
             <TouchableOpacity style={estilo.contenedor}>
-            <Text>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
-            <TouchableOpacity style={estilo.boton} onPress={() => navigation.navigate("infoMateria")}><Text>Editar</Text></TouchableOpacity>
+            <Text style={{fontSize: 22}}>Materia: { materia }<br></br>Horario: {horario1} a {horario2}</Text>
+            <TouchableOpacity style={estilo.boton}><Text>Editar</Text></TouchableOpacity>
             </TouchableOpacity>
         </View>     //Se arma un cartel con la información que se extrajo del props para mostrar la info de la materia
         
@@ -24,7 +25,7 @@ const estilo = StyleSheet.create({      //style para armar el cartel de materia
         margin: 20,
         width: 400,
         borderRadius: 20,
-        backgroundColor: 'chartreuse',
+        backgroundColor: 'white',
         borderColor: 'black',
         borderWidth: 3,
         justifyContent: 'center',
@@ -40,6 +41,7 @@ const estilo = StyleSheet.create({      //style para armar el cartel de materia
         alignItems: 'center',
         position: 'relative',
         left: 310,
+        
     }
     
 

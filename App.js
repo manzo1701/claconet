@@ -1,15 +1,16 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import HomeScreen from './src/screens/inicio';
-console.reportErrorsAsExceptions = false;
+import MainStack from './navigation/MainStack';
 
 
-const App = () => {
-
+function App() {
+  
   return(
-    <View style={styles.container}>
-      <HomeScreen/>
+
+    <View style={{flex:1, justifyContent: 'center', alignContent: 'center'}}>
+
+      <MainStack/>
     </View>
   )
 }
@@ -21,31 +22,8 @@ const styles = StyleSheet.create({      //style para el fondo de la app
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    flex: 1,
-  },
-  container2: {
+    flex: 1
 
-    borderColor: 'black',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 100,
-    borderWidth: 3,
-    height: 30,
-    padding: 10,
-    margin: 10,
-    borderRadius: 20,
-    fontFamily: 'Arial',
-    
-  },
-  boton: {
-
-    borderColor: 'black',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 100,
-    borderWidth: 3,
-    height: 30,
-    borderRadius: 20,
-    fontFamily: 'Arial',
   }
-});
+
+})

@@ -1,23 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import  Cartel  from './../UI/components/cartelMateria'
+import Cartel from '../UI/components/cartelMaterias';
 
 const HomeScreen = ({ navigation }) => {
 
     return(
         
-        <View style={styles.container}>
+        <View style={{alignItems: 'center'}}>
 
             <Text style={{fontSize: 24}}>Agrega una nueva clase</Text><br></br>
-            <Button
-                title='Agregar Clase'
-                onPress={() => 
-                setTimeout(() => {
-                    navigation.navigate('Materia')
-                }, 1000)
-            }
             
-            /><br></br>
+            <Button
+                title='Crear Materia'
+                onPress={() => 
+                    navigation.navigate('Materia')
+                }
+            />
+            
+            
+            <br></br>
 
             <Text style={{fontSize: 24}}>Mis clases</Text>
             <Cartel 
