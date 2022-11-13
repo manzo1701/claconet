@@ -5,11 +5,35 @@ import './app/signupForm.js'
 import './app/signinForm.js'
 import './app/googleLogin.js'
 import './app/logout.js'
+// import { View } from "react-native"
+// import MainStack from "../navigation/mainStack.js"
+    
+// function main(){
+//     return(
+//        <View style = {{flex: 1}}>
+//             <MainStack />
+//        </View>
+//     )
+// }
 
-onAuthStateChanged(auth, async (user) =>{
+// const styles = StyleSheet.create({
+
+//     container: {
+//       flex: 1,
+//       backgroundColor: '#fff',
+//       alignItems: 'center',
+//       justifyContent: 'center',
+//     },
+
+//   });
+
+
+onAuthStateChanged(auth, async (user) =>{ //Pendiente del estado del usuario
     loginCheck(user)
     // if (user){
     // }else{
     //     loginCheck(user)
     // }
 })
+
+export default main;
