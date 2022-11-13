@@ -11,6 +11,7 @@ const Materia = ({ navigation }) => {
         nom: "",
         desde: "",
         hasta: "",
+        profesor: "",
     })
 
     const handleChangeText = (nom, value) => {
@@ -23,16 +24,17 @@ const Materia = ({ navigation }) => {
 
             alert('Completa todos los campos')
         } else if (state.desde === ''){
-
             alert('Completa todos los campos')
         } else if(state.hasta === ''){
             alert('Completa todos los campos')
-        } else{
-
+        } else if (state.profesor === ''){
+            alert('Completa todos los campos')
+        } else {
+            navigation.navigate('Home')
         }
     }
 
-    /*const guardarClase = async () => {
+    /*const guardarClase = async () => {  FIREBASE
 
         if(state.nom === ''){
             alert('Pon un nombre a la clase')
@@ -52,11 +54,18 @@ const Materia = ({ navigation }) => {
     return(
         <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
 
-            <Text style={{fontSize: 24, marginBottom: 10}}>Crea una nueva clase de consulta...</Text>
+            <Text style={{fontSize: 24, marginBottom: 10}}>Crea una nueva clase de consulta</Text><br></br>
 
             <TextInput style={estilo.input} placeholder='Nombre de la materia'
                 onChangeText={(value) => handleChangeText('nom', value)}
             />
+            <TextInput style={estilo.input} placeholder= 'Profesor'
+                onChangeText={(value) => handleChangeText('profesor', value)}
+            />
+
+            <Text style={{fontSize: 16, marginBottom: 10}}>Horario:</Text>
+
+
             <TextInput style={estilo.input} placeholder='Desde'
                 onChangeText={(value) => handleChangeText('desde', value)}
             />
@@ -64,11 +73,13 @@ const Materia = ({ navigation }) => {
                 onChangeText={(value) => handleChangeText('hasta', value)}
             />
 
-            <Button title='Subir' onPress={() => agregarClase()}/><br></br>
-
+            <Boton
+                text = 'Subir'
+                onPress = {() => agregarClase()}
+            /><br></br>
             <Boton
                 text= 'Volver'
-                onPress = {()=> navigation.navigate("Home")}
+                onPress = {()=> navigation.navigate('Home')}
             />
 
             
@@ -90,5 +101,6 @@ const estilo = StyleSheet.create({
         marginBottom: 10,
         height: 40,
         padding: 10,
+        textAlign: 'center'
     }
 })

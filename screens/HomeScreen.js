@@ -1,3 +1,4 @@
+import { useRoute } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput } from 'react-native';
 import Boton from '../UI/components/Boton';
@@ -44,7 +45,6 @@ const HomeScreen = ({ navigation }) => {
     
     )
 }
-
 
 
 
