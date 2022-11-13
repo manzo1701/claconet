@@ -54,4 +54,4 @@ buck-out/
 web-build/
 dist/
 
-/FireBase.config.js
+/src/app/firebase.js
