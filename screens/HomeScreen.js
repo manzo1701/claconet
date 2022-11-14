@@ -15,7 +15,7 @@ const HomeScreen = ({ navigation }) => {
             
             <Boton
                 text = 'Agregar'
-                onPress = {() => { navigation.navigate('Materia')}}
+                onPress = {() => navigation.navigate('Materia')}
             />
             
             

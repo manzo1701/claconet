@@ -1,6 +1,8 @@
 import { Text, View, TextInput, StyleSheet, Button, createElement } from 'react-native'
 import React, { useState } from 'react'
 import Boton from '../UI/components/Boton';
+import { render } from 'react-dom/cjs/react-dom.production.min';
+
 
 
 
@@ -32,6 +34,7 @@ const Materia = ({ navigation }) => {
         } else if (state.profesor === ''){
             alert('Completa todos los campos')
         } else {
+            alert('Subido')
             navigation.navigate('Home')
         }
     }
