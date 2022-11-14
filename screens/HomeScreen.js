@@ -1,6 +1,5 @@
-import { useRoute } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import Boton from '../UI/components/Boton';
 import Cartel from '../UI/components/cartelMaterias';
 
@@ -15,8 +14,8 @@ const HomeScreen = ({ navigation }) => {
             
             
             <Boton
-                text= 'Agregar'
-                onPress = {() => navigation.navigate('Materia')}
+                text = 'Agregar'
+                onPress = {() => { navigation.navigate('Materia')}}
             />
             
             
@@ -40,6 +39,7 @@ const HomeScreen = ({ navigation }) => {
                 horario1='19:30'
                 horario2='20:50'
             />
+            
         </View>
 
     

@@ -6,6 +6,8 @@ import Boton from '../UI/components/Boton';
 
 const Materia = ({ navigation }) => {
 
+  
+
     const [ state, setState ] = useState({
 
         nom: "",
@@ -75,17 +77,18 @@ const Materia = ({ navigation }) => {
 
             <Boton
                 text = 'Subir'
-                onPress = {() => agregarClase()}
+                onPress = {() => {agregarClase()}}
             /><br></br>
             <Boton
                 text= 'Volver'
-                onPress = {()=> navigation.navigate('Home')}
+                onPress = {()=>{ navigation.navigate('Home')}}
             />
 
             
         </View>
     )
 }
+
 
 export default Materia;
 
